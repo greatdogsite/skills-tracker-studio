@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8"/> <!-- Note the closing '/' character -->
+    <title>Do You Do The View?</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body class="container">
+
+
+<form method="POST" action="index">
+    <label for="firstName">What's your name?</label>
+    <input type="text" id="firstName" name="firstName">
+    <br>
+
+    <label for="first">1st Favorite Language</label>
+    <select name="first" id="first">
+        <option value="Python" selected>Python</option>
+        <option value="Java">Java</option>
+        <option value="Javascript">Javascript</option>
+    </select>
+    <br>
+    <label for="second">2nd Favorite Language</label>
+    <select name="second" id="second">
+        <option value="Python" selected>Python</option>
+        <option value="Java">Java</option>
+        <option value="Javascript">Javascript</option>
+    </select>
+    <br>
+    <label for="third">3rd Favorite Language</label>
+    <select name="third" id="third">
+        <option value="Python" selected>Python</option>
+        <option value="Java">Java</option>
+        <option value="Javascript">Javascript</option>
+    </select>
+    <br>
+    <input type="submit" value="Submit" class = "btn btn-success">
+</form>
+<br>
+
+</body>
+</html>

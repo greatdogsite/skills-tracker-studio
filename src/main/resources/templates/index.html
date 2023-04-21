@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8"/> <!-- Note the closing '/' character -->
+    <title>Do You Do The View?</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body class="container">
+<h1>Skills Tracker</h1>
+<h2 th:if="${firstName}" th:text="'Hey ' + ${firstName} + ' $$$'"></h2>
+<h2 th:unless="${firstName}">$$$</h2>
+
+<ul class="list-group">
+        <li class="list-group-item" th:each="language : ${languages}" th:text="${language}"></li>
+</ul>
+
+<br>
+<br>
+<a href="/form" class="link-primary">Like Filling Out Forms?</a>
+
+</body>
+</html>
